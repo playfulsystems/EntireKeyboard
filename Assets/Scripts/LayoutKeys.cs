@@ -19,7 +19,7 @@ public class LayoutKeys : MonoBehaviour
         foreach(char letter in allLetters)
 		{
             GameObject newKeyObject = Instantiate(keyPrefab);
-            newKeyObject.GetComponent<KeyScript>().key = letter.ToString();
+            newKeyObject.GetComponent<KeyCollider>().key = letter.ToString();
             newKeyObject.transform.position = letterPosition;
 
             // adding x padding to x position
